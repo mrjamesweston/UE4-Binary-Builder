@@ -117,18 +117,156 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="bWithDDC.ToolTip" xml:space="preserve">
-    <value>Build a standalone derived-data cache for the engine content and templates.
-Building a stand-alone Derived Data Cache (DDC) for the Engine and Template content can be one of the slowest aspects of the build.
-If you don't need a stand-alone DDC, you can skip this step.</value>
+  <data name="&gt;&gt;GameConfigurations1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <metadata name="mainMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>114, 17</value>
-  </metadata>
+  <data name="&gt;&gt;bWithFullDebugInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bHostPlatformOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bWithTVOS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LogWindow.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithDDC.Text" xml:space="preserve">
+    <value>Include DDC</value>
+  </data>
+  <data name="&gt;&gt;bCleanBuild.Name" xml:space="preserve">
+    <value>bCleanBuild</value>
+  </data>
+  <data name="GameConfigurations1.ToolTip" xml:space="preserve">
+    <value>Which game configurations to include for packaged applications. Defaults to Development;Shipping</value>
+  </data>
+  <data name="bSignExecutables.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bWithWin32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 16</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bWithSwitch.Name" xml:space="preserve">
+    <value>bWithSwitch</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="bWithTVOS.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bWithDDC.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="bWithWin32.Text" xml:space="preserve">
+    <value>Win32</value>
+  </data>
+  <data name="&gt;&gt;bSignExecutables.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bSignExecutables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GameConfigurations1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 210</value>
+  </data>
+  <data name="&gt;&gt;bWithLinux.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;bWithAndroid.Name" xml:space="preserve">
+    <value>bWithAndroid</value>
+  </data>
+  <data name="BuildRocketUE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 324</value>
+  </data>
+  <data name="bWithLinux.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="bWithDDC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="bWithIOS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="bHostPlatformOnly.Text" xml:space="preserve">
+    <value>Host Platform Only</value>
+  </data>
+  <data name="bWithPS4.Text" xml:space="preserve">
+    <value>PS4</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolPath.Name" xml:space="preserve">
+    <value>AutomationToolPath</value>
+  </data>
+  <data name="AutomationToolBrowse.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithTVOS.Text" xml:space="preserve">
+    <value>TVOS</value>
+  </data>
+  <data name="&gt;&gt;GetSourceCodeMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bWithDDC.Name" xml:space="preserve">
+    <value>bWithDDC</value>
+  </data>
+  <data name="bWithFullDebugInfo.Text" xml:space="preserve">
+    <value>Include Full Debug Info</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BuildRocketUE.Text" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BuildRocketUE.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bWithSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 110</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAAAAAAAEAIACoGAAAlgAAAICAAAABACAAKAgBAD4ZAABgYAAAAQAgAKiUAABmIQEASEgAAAEA
@@ -2937,4 +3075,626 @@ If you don't need a stand-alone DDC, you can skip this step.</value>
         AADgAwAA4AcAAA==
 </value>
   </data>
+  <data name="&gt;&gt;bWithFullDebugInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bWithHTML5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bWithHTML5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LogWindow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 12</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolPath.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bWithLinux.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AutomationToolPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Game Configurations</value>
+  </data>
+  <data name="bWithAndroid.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="bWithWin64.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;bWithWin64.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bWithPS4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 136</value>
+  </data>
+  <data name="bWithSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;BuildRocketUE.Name" xml:space="preserve">
+    <value>BuildRocketUE</value>
+  </data>
+  <data name="bWithSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bHostPlatformOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="&gt;&gt;bWithTVOS.Name" xml:space="preserve">
+    <value>bWithTVOS</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bCleanBuild.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="bSignExecutables.Text" xml:space="preserve">
+    <value>Sign Executables</value>
+  </data>
+  <data name="&gt;&gt;bWithAndroid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BuildRocketUE.ToolTip" xml:space="preserve">
+    <value>Start build process.</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolBrowse.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bHostPlatformOnly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bWithSwitch.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithIOS.Text" xml:space="preserve">
+    <value>iOS</value>
+  </data>
+  <data name="bWithLinux.Text" xml:space="preserve">
+    <value>Linux</value>
+  </data>
+  <data name="bWithDDC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 31</value>
+  </data>
+  <data name="&gt;&gt;bCleanBuild.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="bWithFullDebugInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;bHostPlatformOnly.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bWithTVOS.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bWithAndroid.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AutomationToolBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="bWithTVOS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="&gt;&gt;GameConfigurations1.Name" xml:space="preserve">
+    <value>GameConfigurations1</value>
+  </data>
+  <data name="bWithIOS.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bWithMac.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 58</value>
+  </data>
+  <data name="bWithHTML5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="bWithAndroid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1295, 505</value>
+  </data>
+  <data name="&gt;&gt;bWithXboxOne.Name" xml:space="preserve">
+    <value>bWithXboxOne</value>
+  </data>
+  <data name="bWithMac.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithWin64.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="bWithMac.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;bCleanBuild.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BuildRocketUE.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolBrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="bWithAndroid.Text" xml:space="preserve">
+    <value>Android</value>
+  </data>
+  <data name="&gt;&gt;bWithDDC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="AutomationToolBrowse.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="GetSourceCodeMenu.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithLinux.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 110</value>
+  </data>
+  <data name="&gt;&gt;bSignExecutables.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bWithHTML5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 110</value>
+  </data>
+  <data name="bWithTVOS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 84</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="bWithXboxOne.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="bWithFullDebugInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 109</value>
+  </data>
+  <data name="&gt;&gt;bWithDDC.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bCleanBuild.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BuildRocketUE.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bWithFullDebugInfo.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="bWithAndroid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="&gt;&gt;BuildRocketUE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bWithFullDebugInfo.ToolTip" xml:space="preserve">
+    <value>Generate full debug info for binary editor and packaged application builds</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LogWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 483</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bWithHTML5.Name" xml:space="preserve">
+    <value>bWithHTML5</value>
+  </data>
+  <data name="&gt;&gt;bWithIOS.Name" xml:space="preserve">
+    <value>bWithIOS</value>
+  </data>
+  <data name="bWithWin32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="bWithMac.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bWithPS4.Name" xml:space="preserve">
+    <value>bWithPS4</value>
+  </data>
+  <data name="AutomationToolPath.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bWithMac.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bWithXboxOne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="bSignExecutables.ToolTip" xml:space="preserve">
+    <value>Sign the executables produced where signing is available</value>
+  </data>
+  <data name="&gt;&gt;GameConfigurations1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 71</value>
+  </data>
+  <data name="&gt;&gt;bWithSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bWithTVOS.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="bWithLinux.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LogWindow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bWithPS4.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="LogWindow.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithDDC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Binary Builder</value>
+  </data>
+  <data name="LogWindow.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="bWithAndroid.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bWithFullDebugInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;bWithXboxOne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bWithMac.Text" xml:space="preserve">
+    <value>Mac</value>
+  </data>
+  <data name="bWithWin64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="bWithIOS.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bWithWin64.Text" xml:space="preserve">
+    <value>Win64</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 191</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="bWithHTML5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mainMenu1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MainMenu, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value>Which game configurations to include for packaged applications</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolBrowse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bWithWin32.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bWithHTML5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;bCleanBuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LogWindow.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BuildRocketUE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bWithMac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithDDC.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GameConfigurations1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 23</value>
+  </data>
+  <data name="&gt;&gt;bWithWin32.Name" xml:space="preserve">
+    <value>bWithWin32</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Binary builds can be found in Your Engine Folder\LocalBuilds folder</value>
+  </data>
+  <data name="&gt;&gt;GameConfigurations1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bHostPlatformOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="bWithIOS.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="bWithWin32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 58</value>
+  </data>
+  <data name="AutomationToolBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 41</value>
+  </data>
+  <data name="bSignExecutables.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="bWithWin32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 13</value>
+  </data>
+  <data name="bWithSwitch.Text" xml:space="preserve">
+    <value>Switch</value>
+  </data>
+  <data name="bWithHTML5.Text" xml:space="preserve">
+    <value>HTML5</value>
+  </data>
+  <data name="bWithIOS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 84</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="&gt;&gt;bWithMac.Name" xml:space="preserve">
+    <value>bWithMac</value>
+  </data>
+  <data name="bCleanBuild.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="bWithWin64.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bWithPS4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="AutomationToolPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 23</value>
+  </data>
+  <data name="bWithXboxOne.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bWithDDC.ToolTip" xml:space="preserve">
+    <value>Build a standalone derived-data cache for the engine content and templates.
+Building a stand-alone Derived Data Cache (DDC) for the Engine and Template content can be one of the slowest aspects of the build.
+If you don't need a stand-alone DDC, you can skip this step.</value>
+  </data>
+  <data name="bSignExecutables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 57</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Automation Tool Launcher Path:</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mainMenu1.Name" xml:space="preserve">
+    <value>mainMenu1</value>
+  </data>
+  <data name="&gt;&gt;bWithWin64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bWithFullDebugInfo.Name" xml:space="preserve">
+    <value>bWithFullDebugInfo</value>
+  </data>
+  <data name="&gt;&gt;bWithIOS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bWithPS4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bWithXboxOne.Text" xml:space="preserve">
+    <value>Xbox One</value>
+  </data>
+  <data name="AutomationToolPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 41</value>
+  </data>
+  <data name="bWithSwitch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bCleanBuild.ToolTip" xml:space="preserve">
+    <value>Cleans any previous builds</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.Name" xml:space="preserve">
+    <value>LogWindow</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="bHostPlatformOnly.ToolTip" xml:space="preserve">
+    <value>A helper option to make an installed build for your host platform only, so that you don't have to disable each platform individually</value>
+  </data>
+  <data name="&gt;&gt;bHostPlatformOnly.Name" xml:space="preserve">
+    <value>bHostPlatformOnly</value>
+  </data>
+  <data name="bWithPS4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bCleanBuild.Text" xml:space="preserve">
+    <value>Clean Build</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 379</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="LogWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="bWithXboxOne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 136</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 247</value>
+  </data>
+  <data name="&gt;&gt;bSignExecutables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bWithWin32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bWithFullDebugInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 20</value>
+  </data>
+  <data name="BuildRocketUE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 52</value>
+  </data>
+  <data name="&gt;&gt;bHostPlatformOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bWithLinux.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="&gt;&gt;AutomationToolBrowse.Name" xml:space="preserve">
+    <value>AutomationToolBrowse</value>
+  </data>
+  <data name="bCleanBuild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 83</value>
+  </data>
+  <data name="&gt;&gt;bWithWin64.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;bWithLinux.Name" xml:space="preserve">
+    <value>bWithLinux</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Platforms</value>
+  </data>
+  <data name="AutomationToolBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 23</value>
+  </data>
+  <data name="&gt;&gt;GetSourceCodeMenu.Name" xml:space="preserve">
+    <value>GetSourceCodeMenu</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 107</value>
+  </data>
+  <data name="&gt;&gt;bHostPlatformOnly.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;bSignExecutables.Name" xml:space="preserve">
+    <value>bSignExecutables</value>
+  </data>
+  <data name="&gt;&gt;bWithWin64.Name" xml:space="preserve">
+    <value>bWithWin64</value>
+  </data>
+  <data name="GameConfigurations1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 21</value>
+  </data>
+  <data name="bWithWin64.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LogWindow.Text" xml:space="preserve">
+    <value>Welcome to UE4 Binary Builder
+------------------------------------
+</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AutomationToolPath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="mainMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>114, 17</value>
+  </metadata>
 </root>
