@@ -1,4 +1,6 @@
-﻿namespace UE4_Binary_Builder
+﻿using System.Windows.Forms;
+
+namespace UE4_Binary_Builder
 {
     partial class MainWindow
     {
@@ -32,13 +34,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.GameConfigurations = new System.Windows.Forms.TextBox();
+            this.bWithFullDebugInfo = new System.Windows.Forms.CheckBox();
+            this.GameConfigurations1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.bCleanBuild = new System.Windows.Forms.CheckBox();
-            this.bEnableSymStore = new System.Windows.Forms.CheckBox();
             this.bSignExecutables = new System.Windows.Forms.CheckBox();
             this.bWithDDC = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bWithWin64 = new System.Windows.Forms.CheckBox();
+            this.bHostPlatformOnly = new System.Windows.Forms.CheckBox();
             this.bWithXboxOne = new System.Windows.Forms.CheckBox();
             this.bWithPS4 = new System.Windows.Forms.CheckBox();
             this.bWithSwitch = new System.Windows.Forms.CheckBox();
@@ -49,8 +53,6 @@
             this.bWithAndroid = new System.Windows.Forms.CheckBox();
             this.bWithMac = new System.Windows.Forms.CheckBox();
             this.bWithWin32 = new System.Windows.Forms.CheckBox();
-            this.bWithWin64 = new System.Windows.Forms.CheckBox();
-            this.bHostPlatformOnly = new System.Windows.Forms.CheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.BuildRocketUE = new System.Windows.Forms.Button();
             this.AutomationToolBrowse = new System.Windows.Forms.Button();
@@ -60,7 +62,6 @@
             this.GetSourceCodeMenu = new System.Windows.Forms.MenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.LogWindow = new System.Windows.Forms.TextBox();
-            this.bWithFullDebugInfo = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -77,10 +78,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.bWithFullDebugInfo);
-            this.groupBox1.Controls.Add(this.GameConfigurations);
+            this.groupBox1.Controls.Add(this.GameConfigurations1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.bCleanBuild);
-            this.groupBox1.Controls.Add(this.bEnableSymStore);
             this.groupBox1.Controls.Add(this.bSignExecutables);
             this.groupBox1.Controls.Add(this.bWithDDC);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -91,14 +91,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
             // 
-            // GameConfigurations
+            // bWithFullDebugInfo
             // 
-            this.GameConfigurations.Location = new System.Drawing.Point(12, 210);
-            this.GameConfigurations.Name = "GameConfigurations";
-            this.GameConfigurations.Size = new System.Drawing.Size(353, 23);
-            this.GameConfigurations.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.GameConfigurations, "Which game configurations to include for packaged applications. Defaults to Devel" +
+            this.bWithFullDebugInfo.AutoSize = true;
+            this.bWithFullDebugInfo.Location = new System.Drawing.Point(222, 109);
+            this.bWithFullDebugInfo.Name = "bWithFullDebugInfo";
+            this.bWithFullDebugInfo.Size = new System.Drawing.Size(158, 20);
+            this.bWithFullDebugInfo.TabIndex = 8;
+            this.bWithFullDebugInfo.Text = "Include Full Debug Info";
+            this.toolTip1.SetToolTip(this.bWithFullDebugInfo, "Generate full debug info for binary editor and packaged application builds");
+            this.bWithFullDebugInfo.UseVisualStyleBackColor = true;
+            this.bWithFullDebugInfo.CheckedChanged += new System.EventHandler(this.bWithFullDebugInfo_CheckedChanged);
+            // 
+            // GameConfigurations1
+            // 
+            this.GameConfigurations1.Location = new System.Drawing.Point(12, 210);
+            this.GameConfigurations1.Name = "GameConfigurations1";
+            this.GameConfigurations1.Size = new System.Drawing.Size(353, 23);
+            this.GameConfigurations1.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.GameConfigurations1, "Which game configurations to include for packaged applications. Defaults to Devel" +
         "opment;Shipping");
+            this.GameConfigurations1.TextChanged += new System.EventHandler(this.GameConfigurations1_TextChanged);
             // 
             // label3
             // 
@@ -113,25 +126,13 @@
             // bCleanBuild
             // 
             this.bCleanBuild.AutoSize = true;
-            this.bCleanBuild.Location = new System.Drawing.Point(222, 109);
+            this.bCleanBuild.Location = new System.Drawing.Point(222, 83);
             this.bCleanBuild.Name = "bCleanBuild";
             this.bCleanBuild.Size = new System.Drawing.Size(90, 20);
             this.bCleanBuild.TabIndex = 5;
             this.bCleanBuild.Text = "Clean Build";
             this.toolTip1.SetToolTip(this.bCleanBuild, "Cleans any previous builds");
             this.bCleanBuild.UseVisualStyleBackColor = true;
-            // 
-            // bEnableSymStore
-            // 
-            this.bEnableSymStore.AutoSize = true;
-            this.bEnableSymStore.Location = new System.Drawing.Point(222, 83);
-            this.bEnableSymStore.Name = "bEnableSymStore";
-            this.bEnableSymStore.Size = new System.Drawing.Size(146, 20);
-            this.bEnableSymStore.TabIndex = 4;
-            this.bEnableSymStore.Text = "Enable Symbol Store";
-            this.toolTip1.SetToolTip(this.bEnableSymStore, "Whether to add Source indexing to Windows game apps so they can be added to a sym" +
-        "bol server");
-            this.bEnableSymStore.UseVisualStyleBackColor = true;
             // 
             // bSignExecutables
             // 
@@ -159,24 +160,39 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.bWithXboxOne);
-            this.groupBox2.Controls.Add(this.bWithPS4);
-            this.groupBox2.Controls.Add(this.bWithSwitch);
-            this.groupBox2.Controls.Add(this.bWithHTML5);
-            this.groupBox2.Controls.Add(this.bWithLinux);
-            this.groupBox2.Controls.Add(this.bWithTVOS);
-            this.groupBox2.Controls.Add(this.bWithIOS);
-            this.groupBox2.Controls.Add(this.bWithAndroid);
-            this.groupBox2.Controls.Add(this.bWithMac);
-            this.groupBox2.Controls.Add(this.bWithWin32);
             this.groupBox2.Controls.Add(this.bWithWin64);
             this.groupBox2.Controls.Add(this.bHostPlatformOnly);
             this.groupBox2.Location = new System.Drawing.Point(6, 22);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(210, 166);
+            this.groupBox2.Size = new System.Drawing.Size(210, 107);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Platforms";
+            // 
+            // bWithWin64
+            // 
+            this.bWithWin64.AutoSize = true;
+            this.bWithWin64.Checked = true;
+            this.bWithWin64.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bWithWin64.Location = new System.Drawing.Point(6, 48);
+            this.bWithWin64.Name = "bWithWin64";
+            this.bWithWin64.Size = new System.Drawing.Size(63, 20);
+            this.bWithWin64.TabIndex = 1;
+            this.bWithWin64.Text = "Win64";
+            this.bWithWin64.UseVisualStyleBackColor = true;
+            // 
+            // bHostPlatformOnly
+            // 
+            this.bHostPlatformOnly.AutoSize = true;
+            this.bHostPlatformOnly.Location = new System.Drawing.Point(6, 22);
+            this.bHostPlatformOnly.Name = "bHostPlatformOnly";
+            this.bHostPlatformOnly.Size = new System.Drawing.Size(133, 20);
+            this.bHostPlatformOnly.TabIndex = 0;
+            this.bHostPlatformOnly.Text = "Host Platform Only";
+            this.toolTip1.SetToolTip(this.bHostPlatformOnly, "A helper option to make an installed build for your host platform only, so that y" +
+        "ou don\'t have to disable each platform individually");
+            this.bHostPlatformOnly.UseVisualStyleBackColor = true;
+            this.bHostPlatformOnly.CheckedChanged += new System.EventHandler(this.bHostPlatformOnly_CheckedChanged);
             // 
             // bWithXboxOne
             // 
@@ -290,31 +306,6 @@
             this.bWithWin32.Text = "Win32";
             this.bWithWin32.UseVisualStyleBackColor = true;
             // 
-            // bWithWin64
-            // 
-            this.bWithWin64.AutoSize = true;
-            this.bWithWin64.Checked = true;
-            this.bWithWin64.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bWithWin64.Location = new System.Drawing.Point(6, 58);
-            this.bWithWin64.Name = "bWithWin64";
-            this.bWithWin64.Size = new System.Drawing.Size(63, 20);
-            this.bWithWin64.TabIndex = 1;
-            this.bWithWin64.Text = "Win64";
-            this.bWithWin64.UseVisualStyleBackColor = true;
-            // 
-            // bHostPlatformOnly
-            // 
-            this.bHostPlatformOnly.AutoSize = true;
-            this.bHostPlatformOnly.Location = new System.Drawing.Point(6, 22);
-            this.bHostPlatformOnly.Name = "bHostPlatformOnly";
-            this.bHostPlatformOnly.Size = new System.Drawing.Size(133, 20);
-            this.bHostPlatformOnly.TabIndex = 0;
-            this.bHostPlatformOnly.Text = "Host Platform Only";
-            this.toolTip1.SetToolTip(this.bHostPlatformOnly, "A helper option to make an installed build for your host platform only, so that y" +
-        "ou don\'t have to disable each platform individually");
-            this.bHostPlatformOnly.UseVisualStyleBackColor = true;
-            this.bHostPlatformOnly.CheckedChanged += new System.EventHandler(this.bHostPlatformOnly_CheckedChanged);
-            // 
             // toolTip1
             // 
             this.toolTip1.IsBalloon = true;
@@ -351,6 +342,7 @@
             this.AutomationToolPath.Name = "AutomationToolPath";
             this.AutomationToolPath.Size = new System.Drawing.Size(318, 23);
             this.AutomationToolPath.TabIndex = 0;
+            this.AutomationToolPath.TextChanged += new System.EventHandler(this.AutomationToolPath_TextChanged);
             // 
             // mainMenu1
             // 
@@ -367,8 +359,7 @@
             // GetSourceCodeMenu
             // 
             this.GetSourceCodeMenu.Index = 1;
-            this.GetSourceCodeMenu.Text = "Get Source Code";
-            this.GetSourceCodeMenu.Click += new System.EventHandler(this.GetSourceCodeMenu_Click);
+            this.GetSourceCodeMenu.Text = "";
             // 
             // label2
             // 
@@ -395,17 +386,6 @@
             this.LogWindow.TabIndex = 6;
             this.LogWindow.Text = "Welcome to UE4 Binary Builder\r\n------------------------------------\r\n";
             // 
-            // bWithFullDebugInfo
-            // 
-            this.bWithFullDebugInfo.AutoSize = true;
-            this.bWithFullDebugInfo.Location = new System.Drawing.Point(222, 135);
-            this.bWithFullDebugInfo.Name = "bWithFullDebugInfo";
-            this.bWithFullDebugInfo.Size = new System.Drawing.Size(158, 20);
-            this.bWithFullDebugInfo.TabIndex = 8;
-            this.bWithFullDebugInfo.Text = "Include Full Debug Info";
-            this.toolTip1.SetToolTip(this.bWithFullDebugInfo, "Generate full debug info for binary editor and packaged application builds");
-            this.bWithFullDebugInfo.UseVisualStyleBackColor = true;
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -426,6 +406,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UE4 Binary Build Helper";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -454,7 +435,6 @@
         private System.Windows.Forms.CheckBox bWithMac;
         private System.Windows.Forms.CheckBox bWithWin32;
         private System.Windows.Forms.CheckBox bWithWin64;
-        private System.Windows.Forms.CheckBox bEnableSymStore;
         private System.Windows.Forms.CheckBox bSignExecutables;
         private System.Windows.Forms.CheckBox bWithDDC;
         private System.Windows.Forms.Button BuildRocketUE;
@@ -466,7 +446,7 @@
         private System.Windows.Forms.TextBox LogWindow;
         private System.Windows.Forms.MenuItem GetSourceCodeMenu;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox GameConfigurations;
+        private System.Windows.Forms.TextBox GameConfigurations1;
         private System.Windows.Forms.CheckBox bWithFullDebugInfo;
     }
 }

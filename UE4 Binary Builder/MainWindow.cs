@@ -39,14 +39,12 @@ namespace UE4_Binary_Builder
             bWithSwitch.Checked = Settings.Default.bWithSwitch;
             bWithPS4.Checked = Settings.Default.bWithPS4;
             bWithXboxOne.Checked = Settings.Default.bWithXboxOne;
-
             bWithDDC.Checked = Settings.Default.bWithDDC;
             bSignExecutables.Checked = Settings.Default.bSignExes;
-            bEnableSymStore.Checked = Settings.Default.bSymStore;
+            //bEnableSymStore.Checked = Settings.Default.bSymStore;
             bCleanBuild.Checked = Settings.Default.bCleanBuild;
             bWithFullDebugInfo.Checked = Settings.Default.bWithFullDebugInfo;
-
-            GameConfigurations.Text = Settings.Default.GameConfigurations;
+            GameConfigurations1.Text = Settings.Default.GameConfigurations;
         }
 
         private void bHostPlatformOnly_CheckedChanged(object sender, EventArgs e)
@@ -86,16 +84,16 @@ namespace UE4_Binary_Builder
 
                 BuildRocketUE.Enabled = false;
 
-                if (GameConfigurations.Text == "")
+                if (GameConfigurations1.Text == "")
                 {
-                    GameConfigurations.Text = "Development;Shipping";
+                    GameConfigurations1.Text = "Development;Shipping";
                 }
 
-                string CommandLineArgs = String.Format("BuildGraph -target=\"Make Installed Build Win64\" -script=Engine/Build/InstalledEngineBuild.xml -set:WithDDC={0} -set:SignExecutables={1} -set:EmbedSrcSrvInfo={2} -set:GameConfigurations={3} -set:WithFullDebugInfo={4}", 
+                string CommandLineArgs = String.Format("BuildGraph -target=\"Make Installed Build Win64\" -script=Engine/Build/InstalledEngineBuild.xml -set:WithDDC={0} -set:SignExecutables={1} -set:EmbedSrcSrvInfo={2} -set:WithFullDebugInfo={3}", 
                     GetConditionalString(bWithDDC.Checked), 
                     GetConditionalString(bSignExecutables.Checked), 
-                    GetConditionalString(bEnableSymStore.Checked), 
-                    GameConfigurations.Text,
+                   // GetConditionalString(bEnableSymStore.Checked), 
+                    GameConfigurations1.Text,
                     GetConditionalString(bWithFullDebugInfo.Checked));
 
                 if (bHostPlatformOnly.Checked)
@@ -159,7 +157,7 @@ namespace UE4_Binary_Builder
                 }
                 else
                 {
-                    MessageBox.Show("This is not Automation Tool Launcher. Please select AutomationToolLauncher.exe", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("This is not Automation Tool Launcher. Please select AutomationTool.exe", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -172,7 +170,6 @@ namespace UE4_Binary_Builder
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
             Settings.Default.AutomationPath = AutomationExePath;
-
             Settings.Default.SettingHostPlatformOnly = bHostPlatformOnly.Checked;
             Settings.Default.bWithWin64 = bWithWin64.Checked;
             Settings.Default.bWithWin32 = bWithWin32.Checked;
@@ -185,14 +182,12 @@ namespace UE4_Binary_Builder
             Settings.Default.bWithSwitch = bWithSwitch.Checked;
             Settings.Default.bWithPS4 = bWithPS4.Checked;
             Settings.Default.bWithXboxOne = bWithXboxOne.Checked;
-
             Settings.Default.bWithDDC = bWithDDC.Checked;
             Settings.Default.bSignExes = bSignExecutables.Checked;
-            Settings.Default.bSymStore = bEnableSymStore.Checked;
+           // Settings.Default.bSymStore = bEnableSymStore.Checked;
             Settings.Default.bCleanBuild = bCleanBuild.Checked;
             Settings.Default.bWithFullDebugInfo = bWithFullDebugInfo.Checked;
-
-            Settings.Default.GameConfigurations = GameConfigurations.Text;
+            Settings.Default.GameConfigurations = GameConfigurations1.Text;
             Settings.Default.Save();
         }
 
@@ -264,6 +259,26 @@ namespace UE4_Binary_Builder
             {
                 AddLog(Message);
             }
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bWithFullDebugInfo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AutomationToolPath_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GameConfigurations1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
